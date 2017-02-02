@@ -85,13 +85,18 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent;
     .navbar-brand {
         color: $theme-primary;
-        @include script-font;
+        @include heading-font;
         &:hover,
         &:focus,
         &:active,
         &.active {
             color: darken($theme-primary, 10%);
         }
+    }
+    img{
+        margin: .4em;
+        width: 3em;
+        height: 3em;
     }
     .navbar-collapse {
         border-color: fade-out(white, .02);
@@ -169,11 +174,14 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-image: url('../img/header-bg.jpg');
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
+    background-position: top center;
+    @background-attachment: scroll;
     @include background-cover;
     text-align: center;
     color: white;
+    .container{
+        margin-top: 2em;
+    }
     .intro-text {
         padding-top: 100px;
         padding-bottom: 50px;
@@ -196,6 +204,9 @@ header {
 
 @media(min-width:768px) {
     header {
+        .container{
+            margin-top: 0em;
+        }
         .intro-text {
             padding-top: 300px;
             padding-bottom: 200px;
