@@ -1,11 +1,12 @@
-.sponsor-row>[class^="col-"]{
+.sponsor-row>[class^="col-"] {
   margin-top: 20px;
 }
-.sponsor-btn-row>[class^="col-"]{
+
+.sponsor-btn-row>[class^="col-"] {
   margin-top: 40px;
 }
 
-.colcenterchild{
+.colcenterchild {
     float: none;
     margin: 0 auto;
 }
